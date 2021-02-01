@@ -39,7 +39,7 @@
     "lint:styles": "stylelint './src/**/*.js'",
     "lint": "yarn lint:js && yarn lint:styles",
     "eject": "react-scripts eject",
-    "deploy": "yarn build && gh-pages -d build",
+    "deploy": "npm run build && gh-pages -d build -b master",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "predeploy": "npm run build"
