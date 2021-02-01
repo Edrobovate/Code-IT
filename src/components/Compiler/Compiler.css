@@ -1,0 +1,34 @@
+.language {
+  display: inline-flex;
+}
+.heading {
+  font-size: 20px;
+}
+#source {
+  width: 100% !important;
+  background: #cccccc52;
+  height: 50vh;
+  font-size: 15px;
+  resize: vertical;
+}
+#input {
+  background: #cccccc52;
+  width: 100%;
+  height: 100%;
+  resize: vertical;
+  font-size: 17px;
+}
+#output {
+  background: #cccccc52;
+  width: 100%;
+  height: 100%;
+  position: relative  ;
+  top: 12%;
+  font-size: 17px;
+  right: 0;
+  resize: none;
+  text-align: center;
+}
+.language {
+  width: 150px;
+}
