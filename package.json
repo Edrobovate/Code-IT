@@ -1,5 +1,6 @@
 {
-  "name": "react-rainbow-firebase-auth",
+  "homepage": "http://edrobovate.github.io/Code-IT",
+  "name": "code-it-online-compiler",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -38,9 +39,11 @@
     "lint:styles": "stylelint './src/**/*.js'",
     "lint": "yarn lint:js && yarn lint:styles",
     "eject": "react-scripts eject",
-    "deploy": "yarn build && firebase deploy",
+    "deploy": "yarn build && gh-pages -d build",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "cypress:run": "cypress run",
+    "predeploy": "npm run build"
+
   },
   "eslintConfig": {
     "extends": "react-app"
