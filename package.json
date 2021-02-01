@@ -1,5 +1,5 @@
 {
-  "homepage": "http://edrobovate.github.io/Code-IT",
+  "homepage": "https://edrobovate.github.io/Code-IT",
   "name": "code-it-online-compiler",
   "version": "0.1.0",
   "private": true,
@@ -39,10 +39,11 @@
     "lint:styles": "stylelint './src/**/*.js'",
     "lint": "yarn lint:js && yarn lint:styles",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && gh-pages -d build -b master",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run",
-    "predeploy": "npm run build"
+    "cypress:run": "cypress run"
+    
 
   },
   "eslintConfig": {
